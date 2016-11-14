@@ -2,7 +2,7 @@
 #Automatic renaming of hosts into Zabbix by data from snmp sysName
 #Tested on Zabbix 3/MariaDB
 #Based on http://developers-club.com/posts/82465/ (Zabbix 1.8 version)
-#Usage: ./hostname_snmp.sh {v2c|v3} 192.168.1.%
+#Usage: ./hostname_from_snmp.sh {v2c|v3} 192.168.1.%
 #Victor Hugo Assunção - http://victorhugopa.tumblr.com
 
 db_name=zabbix
