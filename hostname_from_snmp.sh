@@ -1,9 +1,10 @@
 #!/bin/bash
 #Automatic renaming of hosts into Zabbix by data from snmp sysName
-#Tested on Zabbix 3/MariaDB
-#Based on http://developers-club.com/posts/82465/ (Zabbix 1.8 version)
-#Usage: ./hostname_from_snmp.sh {v2c|v3} 192.168.1.%
-#Victor Hugo Assunção - http://victorhugopa.tumblr.com
+#Tested on: Zabbix 3/MariaDB
+#Based on:  http://developers-club.com/posts/82465/ (Zabbix 1.8 version)
+#Feature request: https://support.zabbix.com/browse/ZBXNEXT-158
+#Usage: ./hostname_snmp.sh {v2c|v3} 192.168.1.%
+#victorhugopa.tumblr.com | github.com/victorhugopa
 
 db_name=zabbix
 db_host=127.0.0.1
