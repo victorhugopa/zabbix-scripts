@@ -1,10 +1,10 @@
 #!/bin/bash
-#Automatic renaming of hosts into Zabbix by data from snmp sysName
-#Tested on: Zabbix 3/MariaDB
-#Based on:  http://developers-club.com/posts/82465/ (Zabbix 1.8 version)
-#Feature request: https://support.zabbix.com/browse/ZBXNEXT-158
-#Usage: ./hostname_snmp.sh {v2c|v3} 192.168.1.%
-#victorhugopa.tumblr.com | github.com/victorhugopa
+# Automatic renaming of hosts into Zabbix with snmp sysName
+# Tested on: Zabbix 3/MariaDB
+# Based on: http://developers-club.com/posts/82465/ (Zabbix 1.8 version)
+# Feature request: https://support.zabbix.com/browse/ZBXNEXT-158
+# Usage: ./hostname_snmp.sh {v2c|v3} 192.168.1.%
+# github.com/victorhugopa
 
 db_name=zabbix
 db_host=127.0.0.1
@@ -51,7 +51,7 @@ case "$1" in
             ;;
         *)
             echo $"Usage: $0 {v2c|v3} IP"
-                        echo $"Example: $0 v2c 192.168.1.1"
-                        echo $"Example (SQL wildcard): $0 v3 192.168.1.%"
+                        echo $"Ex: $0 v2c 192.168.1.1"
+                        echo $"Ex (SQL wildcard): $0 v3 192.168.1.%"
                         exit 1
 esac
